@@ -1,0 +1,15 @@
+
+
+//@Getmapping
+GET http://localhost:8080/students
+{
+    "firstName": "Kamal",
+    "lastName": "BK",
+    "phoneNumber": 4434491214,
+    "email": "chun@gmail.com",
+    "address": "GlenBurne MD",
+    "dob": "1999-12-11",
+    "age": 24,
+    "gender": "Male",
+    "accountStatus": "Active"
+}
