@@ -1,41 +1,19 @@
-package com.kuebiko.springwebapp.DTO_dataTransferObject_entity;
+package com.kuebiko.springwebapp.model;
 
+public class UpdateStudentRequest {
 
-import com.fasterxml.jackson.annotation.JsonFormat;
-
-import javax.persistence.*;
-
-@Entity
-@Table(name="students")
-public class StudentDTO {
-
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-
-    private Long ID;
-    @Column(name = "student_ID")
+    //String for the putmapping update---
     private String studentID;
-
-    @Column(name = "first_name")
     private String firstName;
     private String lastName;
-
-    @JsonFormat(pattern="000-000-0000")
     private Long phoneNumber;
-
-    //@NotBlank(message = "Please, provide email address.")
-    @Column(name = "email_address")
     private String email;
-
-    @Column(name = "home_address")
     private String address;
-
     private String gender;
     private String status;
 
-
     public String getStudentID() {
-        return this.studentID;
+        return studentID;
     }
 
     public void setStudentID(String studentID) {
@@ -99,5 +77,3 @@ public class StudentDTO {
     }
 
 }
-
-

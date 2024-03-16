@@ -1,8 +1,8 @@
 
 //Postman API----Post, Get, Put, Delete, Patch methods
 
-//@Postmapping
-POST http://localhost:8080/students/insert
+//@Postmapping---for RequestBody
+POST http://localhost:8080/students/action/insert1
 {
     "studentID":101,
     "firstName": "Kamal",
@@ -10,10 +10,22 @@ POST http://localhost:8080/students/insert
     "phoneNumber": 4434491214,
     "email": "kamal@gmail.com",
     "address": "Baltimore MD",
-    "dob": "1989-07-23",
     "gender": "Male",
-    "accountStatus": "Active"
+    "status": "Active"
 }
+
+//----------------------------------------------------------------------------------------
+@Postmapping---for RequestParam
+Post http://localhost:8080/students/action/insert
+studentID:102
+firstName:Tanisha
+lastName:Thapa
+phoneNumber:4434491223
+email:tanisha@gmail.com
+address:Baltimore MD
+gender:Female
+status:Active
+
 
 
 

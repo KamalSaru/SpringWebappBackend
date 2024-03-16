@@ -1,15 +1,35 @@
 
 
 //@Getmapping
-GET http://localhost:8080/students
+//Getting all the students list
+GET http://localhost:8080/product/action/list-all
 {
-    "firstName": "Kamal",
-    "lastName": "BK",
-    "phoneNumber": 4434491214,
-    "email": "chun@gmail.com",
-    "address": "GlenBurne MD",
-    "dob": "1999-12-11",
-    "age": 24,
-    "gender": "Male",
-    "accountStatus": "Active"
-}
+        "studentID": "101",
+        "firstName": "Kamal",
+        "lastName": "Saru",
+        "phoneNumber": 4434491214,
+        "email": "kamal@gmail.com",
+        "address": "Baltimore MD",
+        "gender": "Male",
+        "status": "Active"
+    },
+    {
+        "studentID": "102",
+        "firstName": "Tanisha",
+        "lastName": "Thapa",
+        "phoneNumber": 4434491223,
+        "email": "tanisha@gmail.com",
+        "address": "Baltimore MD",
+        "gender": "Female",
+        "status": "Active"
+    },
+{
+        "studentID": "103",
+        "firstName": "Bimal",
+        "lastName": "Thapa",
+        "phoneNumber": 4434491215,
+        "email": "bimal@gmail.com",
+        "address": "Towson MD",
+        "gender": "Male",
+        "status": null
+    },

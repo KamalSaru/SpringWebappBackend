@@ -1,0 +1,16 @@
+
+
+//Upate the field using the putmapping
+//Putmapping replace the existing field
+
+http://localhost:8080/students/action/update
+{
+        "studentID": "103",
+        "firstName": "Bimal",
+        "lastName": "Thapa",
+        "phoneNumber": 4434491215,
+        "email": "bimal@gmail.com",
+        "address": "Towson MD",
+        "gender": "Male",
+        "status": "Pending"
+}
